@@ -1,0 +1,48 @@
+:host{
+    display: block;
+    color: white;
+    padding: 3rem 2rem;
+}
+section  h2{
+    color: var(--green);
+}
+
+section {
+    margin-top: 2rem;
+}
+
+section h3{
+    margin-top: 0.5rem;
+    color: var(--gray-light);
+}
+section ul{
+    margin-top: 0.5rem;
+    list-style: circle;
+}
+/* ul h3{
+    margin-top: 0.5rem;
+    color:white;
+} */
+
+
+/* pc */
+
+:host.pc section{
+    margin-left: 5rem;
+    position: relative;
+}
+
+:host.pc section h3 span:nth-child(2){
+    color:white;
+}
+
+:host.pc section ::before{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: -60px;
+    top: 5px;
+    border-radius: 50%;
+    z-index: 2;
+    background-color: var(--green);
+}
